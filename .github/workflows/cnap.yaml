@@ -1,5 +1,5 @@
 name: CNAP Build & Deploy
-on: { push: { branches: [main] }, workflow_dispatch: }
+on: { push: { branches: [master] }, workflow_dispatch: }
 
 jobs:
   cnap:
