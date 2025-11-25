@@ -1,0 +1,10 @@
+name: CNAP Build & Deploy
+on: { push: { branches: [main] }, workflow_dispatch: }
+
+jobs:
+  cnap:
+    uses: cnap-tech/actions/.github/workflows/cnap.yml@main
+    permissions: { contents: read, packages: write, id-token: write }
+    secrets: inherit
+    with:
+      cnap-notify-url: https://smee.io/GUdz4uYX6q1oo0y1notify
